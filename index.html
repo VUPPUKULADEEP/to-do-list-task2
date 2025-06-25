@@ -11,14 +11,20 @@
     </header>
     <hr/>
     <main>
-        <input type="text" id="input" placeholder="add a task"/>
-        <button id="add-a-task">Add a Task</button>
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label">Add a task</label>
+            <button id="add-a-task">Add a Task</button>
+    </div>
+        
+        <div>
         <section class="in-complete">
             <h2>in-complete</h2>
         </section>
         <section class="complete">
                 <h2>complete</h2>
         </section>
+        </div>
     </main>
     
     <footer>

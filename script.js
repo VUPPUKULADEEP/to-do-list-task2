@@ -1,6 +1,6 @@
 const button = document.getElementById('add-a-task');
 const list = document.getElementById('task-list');
-const input = document.getElementById('input');
+const input = document.getElementById('name');
 const complete = document.querySelector('.complete')
 const incomplete = document.querySelector('.in-complete')
 
