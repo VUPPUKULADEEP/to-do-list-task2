@@ -11,7 +11,7 @@ button.addEventListener('click' ,() =>{
         return
     }
     const div = document.createElement('div')
-    div.className = 'task-buttons'
+    div.className = 'task-actions'
     const done = document.createElement('button')
     done.textContent = '✅'
     done.addEventListener('click', () =>{

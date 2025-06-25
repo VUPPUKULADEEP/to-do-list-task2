@@ -95,6 +95,10 @@ main {
   font-size: 1rem;
   color: var(--gray);
 }
+#name::after{
+  background-color: gray !important;
+  cursor: pointer;
+}
 
 .form__field:focus {
   padding-bottom: 6px;
@@ -164,4 +168,40 @@ section h2 {
 
 main{
   margin-left: 7%;
+}
+
+.task-actions button {
+  background-color: #444;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Hover effects */
+.task-actions button:hover {
+  background-color: #666;
+  transform: scale(1.05);
+}
+
+/* ✅ Complete button */
+.task-actions .done {
+  background-color: #28a745;
+}
+
+.task-actions .done:hover {
+  background-color: #218838;
+}
+
+/* ❌ Delete button */
+.task-actions .delete {
+  background-color: #dc3545;
+}
+
+.task-actions .delete:hover {
+  background-color: #c82333;
 }
