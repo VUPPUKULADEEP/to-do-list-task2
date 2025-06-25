@@ -10,25 +10,28 @@ button.addEventListener('click' ,() =>{
     if (text == ''){
         return
     }
+    const div = document.createElement('div')
+    div.className = 'task-buttons'
     const done = document.createElement('button')
     done.textContent = '✅'
     done.addEventListener('click', () =>{
         const over = document.createElement('p')
         over.textContent = 'done'
         li.className = 'completed'
-        li.removeChild(delbtn)
-        li.removeChild(done)
+        div.removeChild(delbtn)
+        div.removeChild(done)
         complete.appendChild(li)
     });
     const delbtn = document.createElement('button')
     delbtn.textContent = '❌'
     delbtn.addEventListener('click', () =>{
-        list.removeChild(li);
+        incomplete.removeChild(li);
     });
     const li = document.createElement('li')
     li.textContent = text
-    li.appendChild(done)
-    li.appendChild(delbtn)
+    div.appendChild(done)
+    div.appendChild(delbtn)
+    li.appendChild(div)
     incomplete.appendChild(li)
     input.value = '';
 })

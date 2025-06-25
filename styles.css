@@ -38,7 +38,7 @@ main {
   padding: 20px;
 }
 
-button {
+#add-a-task{
   background-color: #04aa6d;
   border: none;
   color: white;
@@ -143,4 +143,25 @@ section h2 {
 .completed {
   text-decoration: line-through;
   color: gray;
+}
+
+
+.input-button-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-button-wrapper .form__field {
+  flex: 1;
+  margin: 0;
+}
+
+.input-button-wrapper button {
+  margin: 0;
+  white-space: nowrap;
+}
+
+main{
+  margin-left: 7%;
 }
