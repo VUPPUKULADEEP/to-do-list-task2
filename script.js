@@ -1,6 +1,8 @@
 const button = document.getElementById('add-a-task');
 const list = document.getElementById('task-list');
 const input = document.getElementById('input');
+const complete = document.querySelector('.complete')
+const incomplete = document.querySelector('.in-complete')
 
 
 button.addEventListener('click' ,() =>{
@@ -13,9 +15,10 @@ button.addEventListener('click' ,() =>{
     done.addEventListener('click', () =>{
         const over = document.createElement('p')
         over.textContent = 'done'
+        li.className = 'completed'
         li.removeChild(delbtn)
         li.removeChild(done)
-        li.appendChild(t)
+        complete.appendChild(li)
     });
     const delbtn = document.createElement('button')
     delbtn.textContent = '❌'
@@ -26,6 +29,6 @@ button.addEventListener('click' ,() =>{
     li.textContent = text
     li.appendChild(done)
     li.appendChild(delbtn)
-    list.appendChild(li)
+    incomplete.appendChild(li)
     input.value = '';
 })
